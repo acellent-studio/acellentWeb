@@ -171,7 +171,7 @@ namespace acellentWeb
 
         internal void InternalStop()
         {
-            eventLog1.WriteEntry(Properties.Resources.ServiceStopOK + " on " + DateTime.Now.ToString());
+            //eventLog1.WriteEntry(Properties.Resources.ServiceStopOK + " on " + DateTime.Now.ToString());
         }
     }
 }
