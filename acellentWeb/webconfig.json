@@ -1,0 +1,53 @@
+﻿{
+  "UrlSetting": {
+    "Domain": "+",
+    "Port": "80"
+  },
+  "FolderSetting": [
+    {
+      "FolderType": "root",
+      "VirtualPath": "/",
+      "PhysicalDir": "default"
+    },
+    {
+      "FolderType": "allow_list",
+      "VirtualPath": "/public",
+      "PhysicalDir": "default"
+    },
+    {
+      "FolderType": "file_only",
+      "VirtualPath": "/files",
+      "PhysicalDir": "default"
+    }
+  ],
+  "WebApiSetting": [
+    {
+      "DLLName": "antom.WebApi.dll",
+      "DLLPath": "default",
+      "RouteName": "DefaultApi",
+      "RouteTemplate": "api/{controller}/{id}",
+      "ApiDefaults": {
+        "controller": "welcome",
+        "id": "RouteParameter.Optional"
+      },
+      "UseJSON": "Y"
+    },
+    {
+      "DLLName": "SampleWebApi.dll",
+      "DLLPath": "default",
+      "RouteName": "SampleApi",
+      "RouteTemplate": "test/{controller}/{id}",
+      "ApiDefaults": {
+        "controller": "sample",
+        "id": "1"
+      },
+      "UseJSON": "N"
+    }
+  ],
+  "AngularJS": {
+    "enable": "Y",
+    "html5Mode": "Y",
+    "rootPath": "/",
+    "entryPath": "/index.html"
+  }
+}

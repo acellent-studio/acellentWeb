@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>List Files</title>
+</head>
+
+<body>
+<a href="./doc/5-No267_正念呼吸_專輯五之二.pdf">5-No267_正念呼吸_專輯五之二.pdf</a>
+    <div id='fileNames'></div>
+</body>
+<script src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(window).load(function() {
+    var fileExt = ".";
+
+    $(document).ready(function() {
+
+        $.ajax({
+            //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+            url: './doc',
+            success: function(data) {
+                console.log(data);
+                $("#fileNames").html('<ul>');
+
+                $(data).find("a:contains(" + fileExt + ")").each(function() {
+                    $("#fileNames").append('<li><a href="./doc/' + $(this).text() + '" target="new">' + $(this).text() + '</a></li>');
+                });
+                $("#fileNames").append('</ul>');
+            }
+        });
+
+    });
+});
+//]]>
+</script>
+
+</html>

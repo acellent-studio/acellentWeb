@@ -1,0 +1,1 @@
+﻿To retrieve files from this folder, you have to explicitly specify the file name and path in you webpage's A tag.

@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 組件的一般資訊是由下列的屬性集控制。
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
-[assembly: AssemblyTitle("acellentWeb")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("acellentWebService")]
+[assembly: AssemblyDescription("An OWIN Self-hosted Web Service created by Lieh Liao")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("acellentWeb")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCompany("Acellent Studio")]
+[assembly: AssemblyProduct("acellentWebService")]
+[assembly: AssemblyCopyright("Copyright ©  2016 Acellent Studio 優捷科技工作室")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

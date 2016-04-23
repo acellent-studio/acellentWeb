@@ -1,0 +1,27 @@
+綜合研究所 http://10.52.200.200/w/
+外網http://tpri.taipower.com.tw/
+
+研究部門 
+電經室 http://10.52.200.200/w/ES/index.htm
+負載室 http://10.52.200.200/w/LM/index.htm
+電力室 http://10.52.200.200/w/EP/index.htm
+能源室 http://10.52.200.200/w/ER/index.htm
+高壓室 http://10.52.200.200/w/HR/index.htm
+化環室 http://10.52.200.200/w/CH/index.htm
+企劃室  rd/index.htm
+
+試驗部門:
+油煤組
+化檢組 http://10.52.200.200/w/OC/index.htm
+電力組 http://10.52.200.200/w/CT/index.htm
+儀器組 http://10.52.200.200/w/MI/index.htm
+電表組 http://10.52.200.200/w/EM/index.htm
+高壓組 http://10.52.200.200/w/HT/index.htm
+
+技術支援部門:
+供應組 http://10.52.200.200/w/AS/index.htm
+工安組 http://10.52.200.200/w/SH/index.htm
+資訊組 http://10.52.200.200/w/IF/index.htm
+
+人資
+政風
