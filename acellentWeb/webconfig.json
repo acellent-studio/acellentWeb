@@ -22,7 +22,7 @@
   ],
   "WebApiSetting": [
     {
-      "DLLName": "antom.WebApi.dll",
+      "DLLName": "acellent.WebApi.dll",
       "DLLPath": "default",
       "RouteName": "DefaultApi",
       "RouteTemplate": "api/{controller}/{id}",
