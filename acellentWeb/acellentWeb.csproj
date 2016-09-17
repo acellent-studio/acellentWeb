@@ -160,9 +160,6 @@
     <Content Include="webroot\doc\log-3.txt" />
     <Content Include="webroot\doc\log-4.txt" />
     <Content Include="webroot\doc\log-5.txt" />
-    <Content Include="webroot\index-1.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="webroot\index.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -170,6 +167,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="webroot\public\public_folder_allows_directory_browsing.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webroot\welcome-en.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webroot\welcome-cn.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="webroot\welcome.html">

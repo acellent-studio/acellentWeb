@@ -35,6 +35,7 @@
             // 
             this.eventLog1.Log = "AcellentWeb";
             this.eventLog1.Source = "AcellentWeb";
+            this.eventLog1.EntryWritten += new System.Diagnostics.EntryWrittenEventHandler(this.eventLog1_EntryWritten);
             // 
             // WebService
             // 

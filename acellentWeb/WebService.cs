@@ -173,5 +173,10 @@ namespace acellentWeb
         {
             //eventLog1.WriteEntry(Properties.Resources.ServiceStopOK + " on " + DateTime.Now.ToString());
         }
+
+        private void eventLog1_EntryWritten(object sender, System.Diagnostics.EntryWrittenEventArgs e)
+        {
+
+        }
     }
 }

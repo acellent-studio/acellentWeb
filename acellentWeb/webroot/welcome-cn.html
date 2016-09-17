@@ -12,34 +12,34 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <p>
-                        <h3>優捷小型網站服務器 (acellentWeb Windows Service)</h3>
+                        <h3>优捷小型网站服务器 (acellentWeb Windows Service)</h3>
                     </p>
                 </div>
                 <div class="panel-body">
                     <p>
                         <h3>
-                            <em>歡迎使用優捷小型網站服務器！</em>
+                            <em>欢迎使用优捷小型网站服务器！</em>
                         </h3>
                     </p>
                     <p>
                         <h4>
-                            此小型網站服務器係以 C# 6.0 所開發，並以 OWIN Self-hosted Web 元件為基礎之網站伺服器程式。
-                            若您跟我一樣想要開發一個簡易的 web 程式剛好符合您的 web app 需求，但又不需要使用到如 IIS Web
-                            Server 這麼繁重的網站伺服器，且想讓該簡易 web 程式能直接與您的 web app 打包在同一個 .msi
-                            安裝檔提供給使用者在進行簡易安裝後即可使用，則歡迎使用本元件。
+                            此小型网站服务器系以C# 6.0所开发，并以OWIN Self-hosted Web元件为基础之网站伺服器程式。若您跟
+                            我一样想要开发一个简易的web程式刚好符合您的web app需求，但又不需要使用到如IIS Web Server这么
+                            繁重的网站伺服器，且想让该简易web程式能直接与您的web app打包在同一个.msi安装档提供给使用者在进行
+                            简易安装后即可使用，则欢迎使用本元件。
                             <br /><br />
-                            此元件亦支援了簡易 .Net WebApi 功能，只要在 webconfig.json 設定檔中宣告正確的 webapi dll 
-                            名稱，本元件即可支援 webapi 功能。本元件在執行安裝後，將以 windows service 的方式常駐執行。
+                            此元件亦支援了简易.Net WebApi功能，只要在webconfig.json设定档中宣告正确的webapi dll名称，
+                            本元件即可支援webapi功能。本元件在执行安装后，将以windows service的方式常驻执行。
                         </h4>
                         <br />
                         <h4>
                             <em><b>Tom Liao</b></em><br />
-                            優捷科技工作室 Acellent IT Studio<br />
+                            优捷科技工作室 Acellent IT Studio<br />
                             Taipei, Taiwan. 2015/9/3
                         </h4>
                     </p>
                     <p>
-                        <h3><b><u>使用說明</u></b></h3>
+                        <h3><b><u>使用说明</u></b></h3>
                         <br />
                         <h4>
                             <b><u>基本要求：</u></b>
@@ -78,70 +78,69 @@
                                 <li>Owin version=1.0</li>
                             </ol>
                             <br />
-                            <b><u>安裝說明：</u></b>
+                            <b><u>安装说明：</u></b>
                             <ol>
                                 <li>
-                                    <b>主程式根目錄：</b>C:\Program Files\acellent (安裝時的預設路徑)<br />
+                                    <b>主程式根目录：</b>C:\Program Files\acellent (安装时的默认路径)<br />
                                 </li>
                                 <li>
-                                    不論您將本元件安裝到何檔案目錄下，該目錄裡都會有以下的檔案及子目錄：<br />
-                                    <b>2.1 根目錄：</b><br />
+                                    不论您将本元件安装到何档案目录下，该目录里都会有以下的档案及子目录：<br />
+                                    <b>2.1 根目录：</b><br />
                                     <ul>
                                         <li>
-                                            主執行程式(acellentWeb.exe)。
+                                            主执行程式(acellentWeb.exe)。
                                         </li>
                                         <li>
-                                            本元件所需的所有 .dll 檔。
+                                            本元件所需的所有.dll 档。
                                         </li>
                                     </ul>
-                                    <b>2.2 Web 目錄：</b>這是放置您 web app 的子目錄，但您可藉由修改 webconfig.json
-                                    檔案將預設的 web 目錄指到磁碟機上的任何其他目錄。
+                                    <b>2.2 Web 目录：</b>这是放置您web app的子目录，但您可藉由修改webconfig.json档案将默认的web目录指到磁碟机上的任何其他目录。
                                     <ul>
                                         <li>
-                                            <b>webroot</b>: 這是放置 web app 的根目錄(必要)
+                                            <b>webroot</b>: 这是放置 web app 的根目录(必要)
                                         </li>
                                         <li>
-                                            <b>webroot\css</b>: 這是預設放置 css 檔的目錄(非必要)
+                                            <b>webroot\css</b>: 这是默认放置 css 档的目录(非必要)
                                         </li>
                                         <li>
-                                            <b>webroot\files</b>: 這是預設放置唯讀檔案的目錄，但使用者必需明確知道檔案路徑，此目錄不提供檔案瀏覽功能(非必要)
+                                            <b>webroot\files</b>: 这是默认放置唯读档案的目录，但使用者必需明确知道档案路径，此目录不提供档案浏览功能(非必要)
                                         </li>
                                         <li>
-                                            <b>webroot\js</b>: 這是預設放置 JavaScript 檔的目錄(非必要)
+                                            <b>webroot\js</b>: 这是默认放置 JavaScript 档的目录(非必要)
                                         </li>
                                         <li>
-                                            <b>webroot\public</b>: 此目錄提供檔案清單瀏覽功能(非必要)
+                                            <b>webroot\public</b>: 此目录提供档案清单浏览功能(非必要)
                                         </li>
                                     </ul>
                                 </li>
                             </ol>
                             <br />
-                            <b><u>設定檔 webconfig.json 說明：</u></b><br />
+                            <b><u>设定档 webconfig.json 说明：</u></b><br />
                             <ol>
                                 <li>
-                                    在 webconfig.json 中所有設定主要分為以下四大區塊：<br />
+                                    在 webconfig.json 中所有设定主要分为以下四大区块：<br />
                                     <ul>
                                         <li>
                                             <b>UrlSetting</b>: <br />
-                                            -- <b>Domain</b>: 預設為 + 號，表允許所有的 IP address，包括 localhost, 127.0.0.1, 192.160.x.x 及其他綁定在安裝本元件電腦上的所有 IP。<br />
-                                            -- <b>Port</b>: 預設為 80。
+                                            -- <b>Domain</b>: 默认为 + 号，表允许所有的 IP address，包括 localhost, 127.0.0.1, 192.160.xx 及其他绑定在安装本元件电脑上的所有 IP。<br />
+                                            -- <b>Port</b>: 默认为 80。
                                         </li>
                                         <li>
-                                            <b>FolderSetting</b>: 預設支援三種目錄格式<br />
-                                            -- <b>root</b>:(必要) 這是本元件啟動您 web app 的根目錄，不可省略。預設為您安裝目錄下之 webroot 目錄。<br />
-                                            -- <b>allow_list</b>:(非必要) 預設為 webroot 下的 public 目錄。<br />
-                                            -- <b>file_only</b>:(非必要) 預設為 webroot 下的 files 目錄。它與 public 的不同是，public 允許檔案瀏覽，而 file_only 則無法瀏覽目錄，使用者必須明確知道檔案路徑及檔名。<br />
+                                            <b>FolderSetting</b>: 默认支援三种目录格式<br />
+                                            -- <b>root</b>:(必要) 这是本元件启动您web app的根目录，不可省略。默认为您安装目录下之webroot目录。<br />
+                                            -- <b>allow_list</b>:(非必要) 默认为 webroot 下的 public 目录。<br />
+                                            -- <b>file_only</b>:(非必要) 默认为 webroot 下的 files 目录。它与 public 的不同是，public 允许档案浏览，而 file_only 则无法浏览目录，使用者必须明确知道档案路径及档名。<br />
                                         </li>
                                         <li>
-                                            <b>WebApiSetting</b>: WebApi 元件的設定方式請直接參考設定檔中的範例寫法做必要的修改。
+                                            <b>WebApiSetting</b>: WebApi 元件的设定方式请直接参考设定档中的范例写法做必要的修改。
                                         </li>
                                         <li>
-                                            <b>AngularJS</b>: 此功能特別針對支援 AngularJS 1.x 版而設計，此元件尚未測試過 Angular 2。若您的 web app 需要 SEO，則請務必將該段設定中的 html5Mode 設為 Y。
+                                            <b>AngularJS</b>: 此功能特别针对支援 AngularJS 1.x 版而设计，此元件尚未测试过Angular 2。若您的 web app 需要 SEO，则请务必将该段设定中的 html5Mode 设为 Y。
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    webconfig.json 設定檔的預設內容：
+                                    webconfig.json 设定档的默认内容：
                                     <blockquote>
                                         <pre>
 {
