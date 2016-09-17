@@ -14,7 +14,7 @@ namespace acellentWeb
     public class antomController : DefaultHttpControllerSelector
     {
         private readonly HttpConfiguration _configuration;
-        private string _dllName = "antom.WebApi.dll";
+        private string _dllName = "acellent.WebApi.dll";
         private string _dllPath = @Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
         /// <summary>

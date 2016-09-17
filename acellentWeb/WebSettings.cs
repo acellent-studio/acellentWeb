@@ -11,7 +11,7 @@ namespace acellentWeb
     public class WebSettings
     {
         /// <summary>
-        /// Get or set the domain name or IP address of a URL.
+        /// Get or set the domain name or IP address of a URL. 
         /// </summary>
         [JsonProperty]
         public UrlConfig UrlSetting { get; set; }
