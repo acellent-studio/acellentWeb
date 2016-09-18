@@ -45,7 +45,7 @@ namespace acellentWeb
         protected override void OnStart(string[] args)
         {
             string cfg = "webconfig.json";
-            if (args.Length > 0)
+            if (args?.Length > 0)
             {
                 for (int i = 0; i < args.Length; i++)
                 {

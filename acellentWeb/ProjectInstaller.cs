@@ -76,7 +76,7 @@ namespace acellentWeb
             //The following code starts the service after it is installed.
             try
             {
-                using (ServiceController serviceController = new System.ServiceProcess.ServiceController(serviceInstaller1.ServiceName))
+                using (ServiceController serviceController = new ServiceController(serviceInstaller1.ServiceName))
                 {
                     serviceController.Start();
                 }
