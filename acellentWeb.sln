@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acellentWeb", "acellentWeb\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acellent.WebApi", "acellent.WebApi\acellent.WebApi.csproj", "{4962DA15-40EF-4A98-A8E9-0A68BC989DA6}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "acellentWebInstaller", "acellentWebInstaller\acellentWebInstaller.vdproj", "{7B862402-A8F7-4389-AABE-D2220F9B3A62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,8 @@ Global
 		{4962DA15-40EF-4A98-A8E9-0A68BC989DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4962DA15-40EF-4A98-A8E9-0A68BC989DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4962DA15-40EF-4A98-A8E9-0A68BC989DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B862402-A8F7-4389-AABE-D2220F9B3A62}.Debug|Any CPU.ActiveCfg = Debug
+		{7B862402-A8F7-4389-AABE-D2220F9B3A62}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

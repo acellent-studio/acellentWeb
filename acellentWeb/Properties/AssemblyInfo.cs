@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Acellent Studio")]
 [assembly: AssemblyProduct("acellentWebService")]
-[assembly: AssemblyCopyright("Copyright ©  2016 Acellent Studio 優捷科技工作室")]
+[assembly: AssemblyCopyright("Copyright ©  2016 Acellent IT Studio 優捷科技工作室")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -66,7 +66,7 @@ namespace acellentWeb
 
         /// <summary>
         /// 覆寫 ProjectInstaller 的 OnAfterInstall 方法，自定義執行程式安裝完成時需執行的動作。
-        /// 此方法會嘗試啟動 Antom Web Service 及 Antom ERP 的主程式。
+        /// 此方法會嘗試啟動 acellentWebService 及 Web app 的主程式。
         /// </summary>
         /// <param name="savedState">傳入 System.Collections.IDictionary 型態的界面 (interface)</param>
         protected override void OnAfterInstall(IDictionary savedState)
@@ -76,7 +76,7 @@ namespace acellentWeb
             //The following code starts the service after it is installed.
             try
             {
-                using (System.ServiceProcess.ServiceController serviceController = new System.ServiceProcess.ServiceController(serviceInstaller1.ServiceName))
+                using (ServiceController serviceController = new System.ServiceProcess.ServiceController(serviceInstaller1.ServiceName))
                 {
                     serviceController.Start();
                 }
