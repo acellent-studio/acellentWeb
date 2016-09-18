@@ -29,7 +29,7 @@ namespace acellentWeb
                 }
             }
             svc.InternalStart(cfg);
-
+            System.Diagnostics.Process.Start(WebService.WebConfig.UrlSetting.GetFQDN);
             Console.WriteLine("Press any key to stop web service...");
             Console.ReadLine();
 #else

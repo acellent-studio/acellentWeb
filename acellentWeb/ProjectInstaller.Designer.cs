@@ -39,7 +39,10 @@
             // 
             // serviceInstaller1
             // 
+            this.serviceInstaller1.Description = "An OWIN web-based windows service created by Tom Liao (Acellent IT Studio)";
+            this.serviceInstaller1.DisplayName = "acellentWeb Windows Service 1.0.0";
             this.serviceInstaller1.ServiceName = "AcellentWebService";
+            this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
             // ProjectInstaller
             // 

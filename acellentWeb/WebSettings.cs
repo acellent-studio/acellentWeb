@@ -1,6 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Reflection;
 
 namespace acellentWeb
@@ -45,7 +48,12 @@ namespace acellentWeb
         /// which means listening to all available IPs of the machine running this program.</summary>
         public string Domain
         {
-            get { return _domain; }
+            get
+            {
+                IPHostEntry localHostEntry = Dns.GetHostEntry("");
+                _domain = (_domain != "+") ? _domain : localHostEntry.AddressList.FirstOrDefault(current => current.AddressFamily == AddressFamily.InterNetwork).ToString();
+                return _domain;
+            }
             set { _domain = value.Trim(); }
         }
         /// <summary>Get or set the connection port of a URL. Default value is 80.</summary>
@@ -59,7 +67,7 @@ namespace acellentWeb
         {
             get
             {
-                _fqdn = (Domain.Trim().IndexOf("http") == 0) ? Domain : "http://" + Domain.Trim();
+                _fqdn = (Domain.Trim().IndexOf("http") == 0) ? Domain : "http://" + Domain.Trim().Replace("+", "localhost");
                 return _fqdn + ":" + Port.Trim();
             }
         }
