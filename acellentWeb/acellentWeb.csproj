@@ -218,6 +218,12 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\acellent.WebApi\acellent.WebApi.csproj">
+      <Project>{4962da15-40ef-4a98-a8e9-0a68bc989da6}</Project>
+      <Name>acellent.WebApi</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

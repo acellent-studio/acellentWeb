@@ -9,7 +9,7 @@ using System.Web.Http.Dispatcher;
 namespace acellentWeb
 {
     /// <summary>
-    /// 使用外部 DLL 檔所定義的 controller，取代定義於 Antom Web Service 內部的 controller
+    /// 使用外部 DLL 檔所定義的 controller，取代定義於 Acellent Web Service 內部的 controller
     /// </summary>
     public class antomController : DefaultHttpControllerSelector
     {
@@ -18,7 +18,7 @@ namespace acellentWeb
         private string _dllPath = @Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
         /// <summary>
-        /// Constructor of Antom WebApi controller
+        /// Constructor of Acellent WebApi controller
         /// </summary>
         /// <param name="configuration">A type of System.Web.Http.HttpConfiguration configuration</param>
         /// <param name="dllName">A dll file name (without path).</param>
