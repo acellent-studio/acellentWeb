@@ -9,7 +9,8 @@ using System.Reflection;
 namespace acellentWeb
 {
     /// <summary>
-    /// Get or set web cofigurations. The configuration file should be in JSON format.
+    /// Get or set web cofigurations. 
+    /// The configuration file should be in JSON format.
     /// </summary>
     public class WebSettings
     {
