@@ -22,6 +22,8 @@ namespace acellentWeb
             InitializeComponent();
         }
 
+        //private int counter = 0;
+
         /// <summary>
         /// 覆寫 ProjectInstaller 的 OnBeforeInstall 方法，自定義執行程式安裝前需執行的動作。
         /// </summary>
@@ -89,7 +91,9 @@ namespace acellentWeb
                     // 啟動 Acellent 主程式。
                     //Process.Start(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "acellent.exe"));
                     // 啟動 default browser 以執行 Acellent Web 主程式。
-                    Process.Start(WebService.WebConfig.UrlSetting.GetFQDN);
+                    //Process.Start("http://localhost");
+                    UrlConfig displayURL = new UrlConfig();
+                    Process.Start(displayURL.GetFQDN);
                 }
             }
             catch (Exception ex)

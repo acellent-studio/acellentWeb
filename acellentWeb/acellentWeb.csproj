@@ -133,6 +133,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UrlSetting.cs" />
     <Compile Include="WebController.cs" />
     <Compile Include="WebService.cs">
       <SubType>Component</SubType>
