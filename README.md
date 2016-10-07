@@ -47,6 +47,7 @@ Requirements:
 Installation:
 
 1. Default installation folder：C:\Program Files\acellent
+   You can download the installation program (.msi) from: https://github.com/acellent-studio/acellentWeb/blob/master/acellentWebInstaller/acellentWebInstaller.msi
 
 2. No matter you install this program under the default folder or not, the installation folder contains the following sub-folders:
 
