@@ -51,8 +51,8 @@ namespace acellentWeb
         {
             get
             {
-                IPHostEntry localHostEntry = Dns.GetHostEntry("");
-                _domain = (_domain != "+") ? _domain : localHostEntry.AddressList.FirstOrDefault(current => current.AddressFamily == AddressFamily.InterNetwork).ToString();
+                //IPHostEntry localHostEntry = Dns.GetHostEntry("");
+                //_domain = (_domain != "+") ? _domain : localHostEntry.AddressList.FirstOrDefault(current => current.AddressFamily == AddressFamily.InterNetwork).ToString();
                 return _domain;
             }
             set { _domain = value.Trim(); }

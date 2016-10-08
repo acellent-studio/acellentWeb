@@ -160,12 +160,6 @@
         "Entry"
         {
         "MsmKey" = "8:_7C6BE88136B910382F45B451264FA401"
-        "OwnerKey" = "8:_349E9E77FB63FCC3B6F90A3505A02905"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_7C6BE88136B910382F45B451264FA401"
         "OwnerKey" = "8:_81FAEC6E55B0434BA3A1659C2698AF7E"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -179,6 +173,12 @@
         {
         "MsmKey" = "8:_7C6BE88136B910382F45B451264FA401"
         "OwnerKey" = "8:_A284A9A7EA916D7EDCEA3E1F9CEBC844"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7C6BE88136B910382F45B451264FA401"
+        "OwnerKey" = "8:_349E9E77FB63FCC3B6F90A3505A02905"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -261,6 +261,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A911D13713D24F4CA3FE39A5FED1787C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_FC98615A785458742C961391479B54A6"
         "OwnerKey" = "8:_81FAEC6E55B0434BA3A1659C2698AF7E"
         "MsmSig" = "8:_UNDEFINED"
@@ -268,7 +274,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_607B544216C68F20D46365FBF2CE4B4B"
+        "OwnerKey" = "8:_89CC8584323B4A21BE19DA33E0A334B6"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -352,7 +358,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_89CC8584323B4A21BE19DA33E0A334B6"
+        "OwnerKey" = "8:_349E9E77FB63FCC3B6F90A3505A02905"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -364,7 +370,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_349E9E77FB63FCC3B6F90A3505A02905"
+        "OwnerKey" = "8:_607B544216C68F20D46365FBF2CE4B4B"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -385,6 +391,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -401,6 +415,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -920,6 +950,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A911D13713D24F4CA3FE39A5FED1787C"
+            {
+            "SourcePath" = "8:..\\Uninstall acellentWeb service.txt"
+            "TargetName" = "8:Uninstall acellentWeb service.lnk"
+            "Tag" = "8:"
+            "Folder" = "8:_9DB6496FF5BB4234A2D2C4A9EC2C9BE8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FC98615A785458742C961391479B54A6"
             {
             "AssemblyRegister" = "3:1"
@@ -1017,16 +1067,16 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:acellentWeb 1.0.0"
-        "ProductCode" = "8:{AE89E7BD-4305-4633-8690-083A84762ED6}"
-        "PackageCode" = "8:{B387F593-7D1D-4C47-AC79-252CE1E2F09D}"
+        "ProductName" = "8:acellentWeb 2.0.0"
+        "ProductCode" = "8:{C6A9B8B7-A576-42E9-9C87-A216FB417868}"
+        "PackageCode" = "8:{C16FF8C5-B996-4E8E-82F5-3E5A7195A56A}"
         "UpgradeCode" = "8:{036EBAC6-B00F-490B-8C08-A70069D79AA7}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:2.0.0"
         "Manufacturer" = "8:acellent"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -1139,20 +1189,6 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_681F841B3D1B413DBAD66C50C331604E"
-            {
-            "Name" = "8:啟動 Acellent Web"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_81FAEC6E55B0434BA3A1659C2698AF7E"
-            "Folder" = "8:_9DB6496FF5BB4234A2D2C4A9EC2C9BE8"
-            "WorkingFolder" = "8:_E534DF30FB5C4227B255691C3D5337CB"
-            "Icon" = "8:"
-            "Feature" = "8:"
-            }
         }
         "UserInterface"
         {

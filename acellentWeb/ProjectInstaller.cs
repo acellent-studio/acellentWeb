@@ -54,7 +54,7 @@ namespace acellentWeb
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show("AcellentWebService uninstall error:\r\n" + ex.ToString());
+                            MessageBox.Show("acellentWeb uninstall error:\r\n" + ex.ToString());
                         }
                     }
                     else
